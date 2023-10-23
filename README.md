@@ -1,4 +1,4 @@
-# UserLogin-SignupusingLinux
+# CommandLineTestusingShell
 
 
 This project involves creating a Linux Shell Script with the following requirements:
