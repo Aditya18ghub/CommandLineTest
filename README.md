@@ -1,38 +1,58 @@
 # UserLogin-SignupusingLinux
 
-The features and requirements of this shell script works as follows
 
-Provide a prompt for the user to sign-up and sign-in
-Sign In
-Take Test
-View Test
-Sign up
-Exit
- Using sign-up user can register with a user-id and password
-Ask for user-name. The user-name should contain only alphanumeric symbols
-Ask for new password. The password can contain any symbol in it. Accept at-least 8 characters
-with at-least a number and symbol
-Ask the user to re-enter the password again for validation
-Already registered user can sign-in with ID and password
-The script should prompt for user-name and password
-The password should be like a shadow password
-Show error in-case passwords mismatches
-Create log file
-Every activity while the script is to be logged in test_activity.log file.
-Keep date and time along with every activity.
-Question bank
-User should provide a question bank file along with the script
-If not search for a file named question_bank.txt as a default question bank.
-Taking a test
-Should create a directory called “.TestData” in user’s directory structure. For example, like –  ECEP/LinuxSystems/Projects directory if it doesn’t exist.
-Create a file named “answer_file.csv” under TestData directory if it doesn’t exist.
-Prompt the user with questions one by one randomly picked from the question_bank.
-Prompt for questions with multiple choice
-Every question should be timed, say 10 seconds
-On timeout the question should change with fresh time
-Every answer should be stored in answer_file.txt with the question separated by comma
-The answer should be stored with attempt time (say if I answer within 5 seconds, then my answer with 5 seconds (attempt time) should be stored
-If the user chooses this option, the script should show all the questions with all options, the answer should be highlighted
-All the user entered answer have to be entered in the answer_file.csv
-Time-out
-The script should time out if the user input is absent for more than 10 seconds on the main menu
+This project involves creating a Linux Shell Script with the following requirements:
+
+## User Management
+
+- Provide a user prompt for sign-up and sign-in.
+  - Sign In
+  - Take Test
+  - View Test
+  - Sign up
+  - Exit
+
+## Sign Up
+
+- Users can register with a user-ID and password.
+  - Ask for a user-name. The user-name should contain only alphanumeric symbols.
+  - Ask for a new password. The password can contain any symbol and must be at least 8 characters with at least one number and symbol.
+  - Ask the user to re-enter the password for validation.
+
+## Sign In
+
+- Registered users can sign in with their ID and password.
+  - The password should be handled securely.
+
+## Logging
+
+- Create a log file, `test_activity.log`, to record all user activities.
+  - Include date and time for every activity.
+
+## Question Bank
+
+- Users should provide a question bank file.
+- If not provided, the script will search for a default question bank named `question_bank.txt`.
+
+## Taking a Test
+
+- Create a directory called `.TestData` in the user's directory structure if it doesn't exist.
+- Create a file named `answer_file.csv` under `.TestData`.
+- Prompt the user with questions randomly picked from the question bank.
+- Questions should have multiple-choice answers.
+- Questions are timed (e.g., 10 seconds).
+- On timeout, the question should be refreshed.
+- Store every answer in `answer_file.csv` with the question separated by a comma.
+- Include the attempt time.
+
+## Viewing Test Results
+
+- If the user chooses to view the test results, the script should show all the questions with options and highlight the user's answers.
+- All user-entered answers are stored in `answer_file.csv`.
+
+## Time-out
+
+- The script should time out if the user is inactive for more than 10 seconds on the main menu.
+
+Feel free to adapt this structure to your README.md file. You can use this as a starting point and add any additional details or explanations as needed for your project.
+
